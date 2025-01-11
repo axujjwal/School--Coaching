@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School - Contact Us </title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🎓 School Coaching</div>
+        <nav>
+            <a href="/Home/home.html">Home</a>
+            <a href="/Attendance/attendance.html">Attendance</a>
+            <a href="/Contact/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>Have questions? Feel free to reach out to us using the form below.</p>
+
+            <form class="contact-form" id="contactForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div id="formMessage" class="form-message"></div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p><strong>Email:</strong> support@schoolcoaching.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Address:</strong> 123 Learning Lane, Knowledge City, EduLand</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 School Coaching | Designed with ❤️</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>

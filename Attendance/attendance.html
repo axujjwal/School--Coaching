@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School - Attendance</title>
+    <link rel="stylesheet" href="attendance.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">🎓School Coaching Attendance</h1>
+        <nav>
+            <a href="/Home/home.html">Home</a>
+            <a href="/Attendance/attendance.html">Attendance</a>
+            <a href="/Contact/contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="attendance-form">
+            <h2>Mark Attendance</h2>
+            <form id="attendanceForm">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" required>
+                
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" required>
+                
+                <button type="submit">Mark Attendance</button>
+            </form>
+        </section>
+
+        <section id="attendance-list">
+            <h2>Attendance Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll Number</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceTableBody">
+                    <!-- Records will be added here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 School Coaching | Designed with ❤️</p>
+    </footer>
+
+    <script src="attendance.js"></script>
+</body>
+</html>
